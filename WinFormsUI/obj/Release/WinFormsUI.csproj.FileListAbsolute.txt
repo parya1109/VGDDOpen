@@ -1,0 +1,11 @@
+C:\__SVN\ENG_REPOSITORY\Trunks\Projects\Utility_Softwares\VGDDOpen\WinFormsUI\bin\Release\license.txt
+C:\__SVN\ENG_REPOSITORY\Trunks\Projects\Utility_Softwares\VGDDOpen\WinFormsUI\bin\Release\WeifenLuo.WinFormsUI.Docking.dll
+C:\__SVN\ENG_REPOSITORY\Trunks\Projects\Utility_Softwares\VGDDOpen\WinFormsUI\bin\Release\WeifenLuo.WinFormsUI.Docking.pdb
+C:\__SVN\ENG_REPOSITORY\Trunks\Projects\Utility_Softwares\VGDDOpen\WinFormsUI\obj\Release\WinFormsUI.csprojAssemblyReference.cache
+C:\__SVN\ENG_REPOSITORY\Trunks\Projects\Utility_Softwares\VGDDOpen\WinFormsUI\obj\Release\WeifenLuo.WinFormsUI.Docking.Resources.resources
+C:\__SVN\ENG_REPOSITORY\Trunks\Projects\Utility_Softwares\VGDDOpen\WinFormsUI\obj\Release\WeifenLuo.WinFormsUI.Docking.ResourcesVS2003.resources
+C:\__SVN\ENG_REPOSITORY\Trunks\Projects\Utility_Softwares\VGDDOpen\WinFormsUI\obj\Release\WeifenLuo.WinFormsUI.Docking.Strings.resources
+C:\__SVN\ENG_REPOSITORY\Trunks\Projects\Utility_Softwares\VGDDOpen\WinFormsUI\obj\Release\WeifenLuo.WinFormsUI.Docking.StringsVS2003.resources
+C:\__SVN\ENG_REPOSITORY\Trunks\Projects\Utility_Softwares\VGDDOpen\WinFormsUI\obj\Release\WinFormsUI.csproj.GenerateResource.cache
+C:\__SVN\ENG_REPOSITORY\Trunks\Projects\Utility_Softwares\VGDDOpen\WinFormsUI\obj\Release\WeifenLuo.WinFormsUI.Docking.dll
+C:\__SVN\ENG_REPOSITORY\Trunks\Projects\Utility_Softwares\VGDDOpen\WinFormsUI\obj\Release\WeifenLuo.WinFormsUI.Docking.pdb

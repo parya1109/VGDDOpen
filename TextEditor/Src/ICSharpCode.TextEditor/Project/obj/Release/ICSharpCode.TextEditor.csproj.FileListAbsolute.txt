@@ -1,0 +1,2 @@
+C:\__SVN\ENG_REPOSITORY\Trunks\Projects\Utility_Softwares\VGDDOpen\TextEditor\bin\Release\ICSharpCode.TextEditor.dll
+C:\__SVN\ENG_REPOSITORY\Trunks\Projects\Utility_Softwares\VGDDOpen\TextEditor\Src\ICSharpCode.TextEditor\Project\obj\Release\ICSharpCode.TextEditor.dll

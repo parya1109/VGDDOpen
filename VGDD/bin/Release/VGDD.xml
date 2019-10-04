@@ -1,0 +1,209 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+VGDD
+</name>
+</assembly>
+<members>
+<member name="T:My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="T:CollapsablePanel">
+ <summary>
+ Main class for collapsible panel user control
+ </summary>
+</member>
+<member name="F:CollapsablePanel._expandedHeight">
+ <summary>
+ Variable for setting the user control height when control is expanded
+ </summary>
+</member>
+<member name="F:CollapsablePanel._panelState">
+ <summary>
+ Variable for setting the current user controlCommon.State
+ </summary>
+</member>
+<member name="F:CollapsablePanel._isCollapsed">
+ <summary>
+ Variable for determining if the user control is currently collapsed
+ </summary>
+</member>
+<member name="F:CollapsablePanel._fitToParent">
+ <summary>
+ Determines if this user control is going to match its parent width
+ </summary>
+</member>
+<member name="F:CollapsablePanel._nextPanel">
+ <summary>
+ Panel to be located beneath this panel
+ </summary>
+</member>
+<member name="T:CollapsablePanel.DelegateStateChanged">
+ <summary>
+ Delegate and event for informing the parent control that this user controlCommon.State has changed
+ </summary>
+</member>
+<member name="P:CollapsablePanel.ExpandedHeight">
+ <summary>
+ Gets or sets the value for user control height when it is expanded
+ </summary>
+</member>
+<member name="P:CollapsablePanel.PanelTitle">
+ <summary>
+ Gets or sets panel title"
+ </summary>
+</member>
+<member name="P:CollapsablePanel.PanelState">
+ <summary>
+ Gets or sets current panelCommon.State
+ </summary>
+</member>
+<member name="P:CollapsablePanel.FitToParent">
+ <summary>
+ If True, fits the panel to match the parent width
+ </summary>
+</member>
+<member name="P:CollapsablePanel.NextPanel">
+ <summary>
+ Gets or sets the panel to be located beneath this panel
+ </summary>
+</member>
+<member name="M:CollapsablePanel.CollapsablePanel_SizeChanged(System.Object,System.EventArgs)">
+ <summary>
+ We use this event to recalculate the Expanded Height when the user resizes the user control at Design mode
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:CollapsablePanel.CollapsablePanel_LocationChanged(System.Object,System.EventArgs)">
+ <summary>
+ We use this event in order to move the next panel down when this panel located is changed
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:CollapsablePanel.ToggleState(System.Object,System.EventArgs)">
+ <summary>
+ Changes the currentCommon.State from Collapsed to Expanded or viceversa
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:CollapsablePanel.MoveNextPanel">
+ <summary>
+ Moves the next panel down (when user controlCommon.State is changed or the control is relocated)
+ </summary>
+</member>
+<member name="T:PanelStateOptions">
+ <summary>
+ Enumeration for defining the options for panelCommon.State
+ </summary>
+</member>
+<member name="T:SourceEditor.TextEditorSearcher">
+ <summary>This class finds occurrances of a search string in a text 
+ editor's IDocument... it's like Find box without a GUI.</summary>
+</member>
+<member name="M:SourceEditor.TextEditorSearcher.SetScanRegion(ICSharpCode.TextEditor.Document.ISelection)">
+ <summary>Sets the region to search. The region is updated 
+ automatically as the document changes.</summary>
+</member>
+<member name="M:SourceEditor.TextEditorSearcher.SetScanRegion(System.Int32,System.Int32)">
+ <summary>Sets the region to search. The region is updated 
+ automatically as the document changes.</summary>
+</member>
+<member name="P:SourceEditor.TextEditorSearcher.BeginOffset">
+ <summary>Begins the start offset for searching</summary>
+</member>
+<member name="P:SourceEditor.TextEditorSearcher.EndOffset">
+ <summary>Begins the end offset for searching</summary>
+</member>
+<member name="M:SourceEditor.TextEditorSearcher.FindNext(System.Int32,System.Boolean,System.Boolean@)">
+ <summary>Finds next instance of LookFor, according to the search rules 
+ (MatchCase, MatchWholeWordOnly).</summary>
+ <param name="beginAtOffset">Offset in Document at which to begin the search</param>
+ <remarks>If there is a match at beginAtOffset precisely, it will be returned.</remarks>
+ <returns>Region of document that matches the search string</returns>
+</member>
+<member name="T:SourceEditor.HighlightGroup">
+ <summary>Bundles a group of markers together so that they can be cleared 
+ together.</summary>
+</member>
+<member name="T:SourceEditor.Editor">
+ <summary>Main form for a multi-file text editor based on 
+ ICSharpCode.TextEditor.TextEditorControl.</summary>
+</member>
+<member name="F:SourceEditor.Editor.components">
+ <summary>
+ Required designer variable.
+ </summary>
+</member>
+<member name="M:SourceEditor.Editor.Dispose(System.Boolean)">
+ <summary>
+ Clean up any resources being used.
+ </summary>
+ <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+</member>
+<member name="M:SourceEditor.Editor.InitializeComponent">
+ <summary>
+ Required method for Designer support - do not modify
+ the contents of this method with the code editor.
+ </summary>
+</member>
+<member name="F:SourceEditor.Editor._editorSettings">
+ <summary>This variable holds the settings (whether to show line numbers, 
+ etc.) that all editor controls share.</summary>
+</member>
+<member name="M:SourceEditor.Editor.DoEditAction(ICSharpCode.TextEditor.TextEditorControl,ICSharpCode.TextEditor.Actions.IEditAction)">
+ <summary>Performs an action encapsulated in IEditAction.</summary>
+ <remarks>
+ There is an implementation of IEditAction for every action that 
+ the user can invoke using a shortcut key (arrow keys, Ctrl+X, etc.)
+ The editor control doesn't provide a public funciton to perform one
+ of these actions directly, so I wrote DoEditAction() based on the
+ code in TextArea.ExecuteDialogKey(). You can call ExecuteDialogKey
+ directly, but it is more fragile because it takes a Keys value (e.g.
+ Keys.Left) instead of the action to perform.
+ <para/>
+ Clipboard commands could also be done by calling methods in
+ editor.ActiveTextAreaControl.TextArea.ClipboardHandler.
+ </remarks>
+</member>
+<member name="P:SourceEditor.Editor.IsModified">
+ <summary>Gets whether the file in the specified editor is modified.</summary>
+ <remarks>TextEditorControl doesn't maintain its own internal modified 
+ flag, so we use the '*' shown after the file name to represent the 
+ modified state.</remarks>
+</member>
+<member name="M:SourceEditor.Editor.TextEditorForm_DragEnter(System.Object,System.Windows.Forms.DragEventArgs)">
+ <summary>We handle DragEnter and DragDrop so users can drop files on the editor.</summary>
+</member>
+<member name="T:SourceEditor.RegionFoldingStrategy">
+ <summary>
+ The class to generate the foldings, it implements ICSharpCode.TextEditor.Document.IFoldingStrategy
+ </summary>
+</member>
+<member name="M:SourceEditor.RegionFoldingStrategy.GenerateFoldMarkers(ICSharpCode.TextEditor.Document.IDocument,System.String,System.Object)">
+ <summary>
+ Generates the foldings for our document.
+ </summary>
+ <param name="document">The current document.</param>
+ <param name="fileName">The filename of the document.</param>
+ <param name="parseInformation">Extra parse information, not used in this sample.</param>
+ <returns>A list of FoldMarkers.</returns>
+</member>
+</members>
+</doc>

@@ -1,0 +1,4 @@
+C:\__SVN\ENG_REPOSITORY\Trunks\Projects\Utility_Softwares\VGDDOpen\AquaGaugeVb\obj\Debug\AquaGaugeVb.vbprojAssemblyReference.cache
+C:\__SVN\ENG_REPOSITORY\Trunks\Projects\Utility_Softwares\VGDDOpen\AquaGaugeVb\obj\Debug\AquaGaugeVb.Form1.resources
+C:\__SVN\ENG_REPOSITORY\Trunks\Projects\Utility_Softwares\VGDDOpen\AquaGaugeVb\obj\Debug\AquaGaugeVb.Resources.resources
+C:\__SVN\ENG_REPOSITORY\Trunks\Projects\Utility_Softwares\VGDDOpen\AquaGaugeVb\obj\Debug\AquaGaugeVb.vbproj.GenerateResource.cache

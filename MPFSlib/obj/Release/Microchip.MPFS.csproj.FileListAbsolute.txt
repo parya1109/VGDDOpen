@@ -1,0 +1,3 @@
+C:\__SVN\ENG_REPOSITORY\Trunks\Projects\Utility_Softwares\VGDDOpen\MPFSlib\bin\Microchip.MPFS.dll
+C:\__SVN\ENG_REPOSITORY\Trunks\Projects\Utility_Softwares\VGDDOpen\MPFSlib\obj\Release\Microchip.MPFS.csprojAssemblyReference.cache
+C:\__SVN\ENG_REPOSITORY\Trunks\Projects\Utility_Softwares\VGDDOpen\MPFSlib\obj\Release\Microchip.MPFS.dll

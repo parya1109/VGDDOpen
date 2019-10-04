@@ -1,0 +1,188 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+VGDDCommonEmbedded
+</name>
+</assembly>
+<members>
+<member name="T:My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="F:FontDialog.components">
+ <summary>
+ Required designer variable.
+ </summary>
+</member>
+<member name="M:FontDialog.Dispose(System.Boolean)">
+ <summary>
+ Clean up any resources being used.
+ </summary>
+ <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+</member>
+<member name="M:FontDialog.InitializeComponent">
+ <summary>
+ Required method for Designer support - do not modify
+ the contents of this method with the code editor.
+ </summary>
+</member>
+<member name="M:FontDialog.chb_CheckedChanged(System.Object,System.EventArgs)">
+ <summary>
+ Handles CheckedChanged event for Bold, 
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="F:FontList.components">
+ <summary> 
+ Required designer variable.
+ </summary>
+</member>
+<member name="M:FontList.Dispose(System.Boolean)">
+ <summary> 
+ Clean up any resources being used.
+ </summary>
+ <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+</member>
+<member name="M:FontList.InitializeComponent">
+ <summary> 
+ Required method for Designer support - do not modify 
+ the contents of this method with the code editor.
+ </summary>
+</member>
+<member name="M:FontList.lstFont_KeyDown(System.Object,System.Windows.Forms.KeyEventArgs)">
+ <summary>
+ 
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="T:RecentlyUsedList`1">
+ <summary>
+ A custom collection for maintaining recently used lists of any kind. For example, recently used fonts, color etc.
+ List with limited size which is given by MaxSize. As list grows beyond MaxSize, oldest item is removed.
+ New items are added at the top of the list (at index 0), existing items move down.
+ If added item is already there in the list, it is moved to the top (at index 0).
+ </summary>
+ <typeparam name="T"></typeparam>
+</member>
+<member name="M:RecentlyUsedList`1.#ctor(System.Int32)">
+ <summary>
+ 
+ </summary>
+ <param name="maxSize">As list grows longer than max size, oldest item will be dropped.</param>
+</member>
+<member name="T:CustomPropertyEditorBase">
+ <summary>
+ This is a UITypeEditor base class usefull for simple editing of control properties 
+ in a DropDown or a ModalDialogForm window at design mode (in VisualStudio.Net IDE). 
+ To use this, inherits a class from it and add this attribute to your control property(ies): 
+ &lt;Editor(GetType(MyPropertyEditor), GetType(System.Drawing.Design.UITypeEditor))&gt;  
+ </summary>
+</member>
+<member name="M:CustomPropertyEditorBase.GetEditControl(System.String,System.Object)">
+ <summary>
+ The driven class should provide its edit Control to be shown in the 
+ DropDown or DialogForm window by means of this function. 
+ If specified control be a Form, it is shown in a Modal Form, otherwise, it is shown as in a DropDown window. 
+ This edit control should return its final value at GetEditedValue() method. 
+ </summary>
+</member>
+<member name="M:CustomPropertyEditorBase.GetEditedValue(System.Windows.Forms.Control,System.String,System.Object)">
+ <summary>The driven class should return the New Value for edited property at this function.</summary>
+ <param name="EditControl">
+ The control shown in DropDown window and used for editing. 
+ This is the control you pass in GetEditControl() function.
+ </param>
+ <param name="OldValue">The original value of the property before editing through the DropDown window.</param>
+</member>
+<member name="M:CustomPropertyEditorBase.GetEditStyle(System.ComponentModel.ITypeDescriptorContext)">
+ <summary>
+ Sets the edit style mode based on the type of EditControl: DropDown or Modal(Dialog). 
+ Note that the driven class can also override this function and explicitly specify the EditStyle value.
+ </summary>
+</member>
+<member name="M:CustomPropertyEditorBase.GetIWindowsFormsEditorService">
+ <summary>
+ Provides the interface for this UITypeEditor to display Windows Forms or to 
+ display a control in a DropDown area from the property grid control in design mode.
+ </summary>
+</member>
+<member name="M:CustomPropertyEditorBase.CloseDropDownWindow">
+ <summary>Close DropDown window to finish editing</summary>
+</member>
+<member name="M:NumericUpDownEx.#ctor">
+ <summary>
+ object creator
+ </summary>
+</member>
+<member name="M:NumericUpDownEx.GetPrivateField``1(NumericUpDownEx,System.String)">
+ <summary>
+ Extracts a reference to a private underlying field
+ </summary>
+</member>
+<member name="M:NumericUpDownEx.WndProc(System.Windows.Forms.Message@)">
+ <summary>
+ WndProc override to kill WN_MOUSEWHEEL message
+ </summary>
+</member>
+<member name="F:NumericUpDownEx.InterceptMouseWheelMode.Always">
+ <summary>MouseWheel always works (defauld behavior)</summary>
+</member>
+<member name="F:NumericUpDownEx.InterceptMouseWheelMode.WhenMouseOver">
+ <summary>MouseWheel works only when mouse is over the (focused) control</summary>
+</member>
+<member name="F:NumericUpDownEx.InterceptMouseWheelMode.Never">
+ <summary>MouseWheel never works</summary>
+</member>
+<member name="F:NumericUpDownEx.ShowUpDownButtonsMode.Always">
+ <summary>UpDownButtons are always visible (defauld behavior)</summary>
+</member>
+<member name="F:NumericUpDownEx.ShowUpDownButtonsMode.WhenMouseOver">
+ <summary>UpDownButtons are visible only when mouse is over the control</summary>
+</member>
+<member name="F:NumericUpDownEx.ShowUpDownButtonsMode.WhenFocus">
+ <summary>UpDownButtons are visible only when control has the focus</summary>
+</member>
+<member name="F:NumericUpDownEx.ShowUpDownButtonsMode.WhenFocusOrMouseOver">
+ <summary>UpDownButtons are visible when control has focus or mouse is over the control</summary>
+</member>
+<member name="P:NumericUpDownEx.WrapValue">
+ <summary>
+ If set, incrementing value will cause it to restart from Minimum 
+ when Maximum is reached (and viceversa).
+ </summary>
+</member>
+<member name="M:NumericUpDownEx.UpdateUpDownButtonsVisibility">
+ <summary>
+ Show or hide the UpDownButtons, according to ShowUpDownButtons property value
+ </summary>
+</member>
+<member name="M:NumericUpDownEx.OnTextBoxResize(System.Object,System.EventArgs)">
+ <summary>
+ Custom textbox size management
+ </summary>
+</member>
+<member name="M:VGDDMicrochip.SuperGauge.IsNumberAvailable(System.Int16,System.Int16[])">
+ <summary>
+ Returns true if a given number is available in the given list.
+ </summary>
+ <param name="number"></param>
+ <param name="listOfNumbers"></param>
+ <returns></returns>
+</member>
+</members>
+</doc>
